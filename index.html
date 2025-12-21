@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exemplo de formulário de cadastro com validação acessível utilizando recursos das linguagens HTML5, CSS e JavaScript, contendo feedback visual e verificações de diversos erros.">
+    <title>Validação de Formulários com JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>JavaScript | Validação de Formulários</h1>
+        <form action="#" method="post" aria-labelledby="titulo-cadastro" aria-describedby="campos-obrigatorios">
+            <h2 id="titulo-cadastro">Cadastro (simulação)</h2>
+            <p id="campos-obrigatorios">Campos marcados com asterisco são <b>obrigatórios</b>.</p>
+
+            <div class="campo">
+                <label for="nome">
+                    Nome completo <span class="obrigatorio" aria-hidden="true">*</span>
+                </label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">
+                    E-mail <span class="obrigatorio" aria-hidden="true">*</span>
+                </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">
+                    Senha <span class="obrigatorio" aria-hidden="true">*</span>
+                </label>
+                <input type="password" name="senha" id="senha" required minlength="6" aria-describedby="ajuda-senha">
+                <span id="ajuda-senha">
+                    Mínimo de 6 caracteres
+                </span>
+            </div>
+
+            <button type="submit" id="criar">
+                Criar conta
+            </button>
+        </form>
+    </main>
+</body>
+</html>
