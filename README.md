@@ -1,2 +1,2 @@
-# Validação de Formulários | Código HTML
-Página HTML com formulário básico e atributos aria-* iniciais.
+# Validação de Formulários | Código HTML e CSS
+Página HTML com formulário básico, atributos aria-* iniciais e estilização CSS.
