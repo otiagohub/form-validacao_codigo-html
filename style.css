@@ -1,0 +1,105 @@
+/* Reset básico */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Removemos o estilo de foco padrão, mas reintroduzimos
+um foco acessível e inteligente/moderno usando :focus-visible.
+Esta pseudo-classe respeita o método de navegação do usuário. */
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px inset #005fcc;
+    outline-offset: 2px;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    padding: 2rem;
+}
+
+main {
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+#titulo-cadastro {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #4f4f4f6d;
+}
+
+#campos-obrigatorios {
+    margin-bottom: 1rem;
+}
+
+.campo {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#ajuda-senha {
+    display: block;
+    margin-top: .25rem;
+    color: #555;
+}
+
+#criar {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #005fcc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#criar:hover, #criar:focus-visible {
+    background-color: #004bb5;
+}
+
+input:invalid {
+    border-color: #c00;
+}
+
+input:valid {
+    border-color: #2e7d32;
+}

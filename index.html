@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Exemplo de formulário de cadastro com validação acessível utilizando recursos das linguagens HTML5, CSS e JavaScript, contendo feedback visual e verificações de diversos erros.">
     <title>Validação de Formulários com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <h1>JavaScript | Validação de Formulários</h1>
-        <form action="#" method="post" aria-labelledby="titulo-cadastro" aria-describedby="campos-obrigatorios">
+
+        <form autocomplete="off" action="#" method="post" aria-labelledby="titulo-cadastro" aria-describedby="campos-obrigatorios">
             <h2 id="titulo-cadastro">Cadastro (simulação)</h2>
             <p id="campos-obrigatorios">Campos marcados com asterisco são <b>obrigatórios</b>.</p>
 
@@ -32,9 +34,9 @@
                     Senha <span class="obrigatorio" aria-hidden="true">*</span>
                 </label>
                 <input type="password" name="senha" id="senha" required minlength="6" aria-describedby="ajuda-senha">
-                <span id="ajuda-senha">
+                <small id="ajuda-senha">
                     Mínimo de 6 caracteres
-                </span>
+                </small>
             </div>
 
             <button type="submit" id="criar">
